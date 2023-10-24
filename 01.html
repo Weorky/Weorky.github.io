@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/reset_CSS.css">
+    <link rel= "stylesheet" type="text/css" href="/CSS/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <input type="checkbox" id="menu_control">
+
+    <div class="top_area"></div>
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="/resourcr/starbucks-logo-png-1680.png" alt="logo" width="50" height="50"></a>
+        </h1>
+
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+
+        <nav class="sidebar">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+
+        </nav>
+    </div>
+
+    <div class="top">
+        <div class="cutarea"></div>
+        <div class="breadcrumb">
+            <a href="#">首頁</a>
+            <div>‧</div>
+            <a href="#">商品</a>
+            <div>‧</div>
+            <a href="#">飲品</a>
+        </div>    
+    </div>
+
+    <div class="wrap">
+        <div class="content">
+            <h1 class="page_heading">飲品</h1>
+        </div>
+
+        <div class="contentflex">
+            <div class="viewlist">
+                <a href="#">咖啡飲品</a>
+                <a href="#">茶瓦納</a>
+                <a href="#">星冰樂</a>
+                <a href="#">冷萃咖啡</a>
+                <a href="#">星沁爽</a>
+                <a href="#">其他飲料</a>
+                <a href="#">罐裝飲料</a>
+
+
+            </div>
+            <h2>推薦飲料</h2>
+            <div class="itemwrap">
+                
+                <!-- 商品1 -->
+                <div class="item">
+                    <div class="iteminfo">
+                        <img src="https://www.starbucks.com.tw/common/objects/images/product/2023090114422214.jpg"  alt="product_img">
+                        <h2 >冰搖黑糖肉桂風味燕麥奶咖啡</h2>
+                        <h2> Brown Sugar Oatmilk Iced Shaken Espresso</h2>
+                    </div>
+                </div>
+                <!-- 商品1 -->
+
+                <!-- 商品2 -->
+                <div class="item">
+                    <div class="iteminfo">
+                        <img src="https://www.starbucks.com.tw/common/objects/images/product/20230901144345723.jpg" alt="product_img">
+                        <h2 >冰搖岩鹽焦糖風味燕麥奶咖啡</h2>
+                        <h2>Rock Salted Caramel Oatmilk Iced Shaken Espresso</h2>
+                    </div>
+                </div>
+                <!-- 商品2 -->
+
+                <!-- 商品3 -->
+                <div class="item">
+                    <div class="iteminfo">
+                        <img src="https://www.starbucks.com.tw/common/objects/images/product/20230911123309178.jpg" alt="product_img">
+                        <h2 >氮氣醇濃抹茶咖啡</h2>
+                        <h2>Nitro Cold Brew & Pure Matcha Fusion</h2>
+                    </div>
+                </div>
+                <!-- 商品3 -->
+
+                <!-- 商品4 -->
+                <div class="item">
+                    <div class="iteminfo">
+                        <img src="https://www.starbucks.com.tw/common/objects/images/product/20230901144126332.jpg" alt="product_img">
+                        <h2 >烤地瓜布蕾風味瑪奇朵</h2>
+                        <h2>Roasted Sweet Potato Brulee Macchiato</h2>
+                    </div>
+                </div>
+                <!-- 商品4 -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $(".menu_btn").click(function(){
+                $(".sidebar").toggleClass("active");
+            });
+        });
+
+    </script>
+    
+
+
+</body>
+</html>

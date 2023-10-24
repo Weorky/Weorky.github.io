@@ -1,0 +1,201 @@
+
+#menu_control{
+    position: absolute;
+    opacity: 0;
+}
+
+
+.top_area{
+    width: 100%;
+    height: 15px;
+    background-color: #006341;
+
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F7;
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+.menu_btn span{
+    opacity: 0;
+}
+
+.menu_btn::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 36px;
+    left: 2px;
+    background-color: #006341;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 12px 0px #006341,
+                0px -12px 0px #006341;
+}
+
+.sidebar {
+    width: 80%;
+    height: 100vh;
+    background-color: #F7F7F7;
+    position: absolute;
+    top: 80px;
+    right: -80%;
+    transition: 0.75s;
+
+
+    /* 暫時關閉選單功能 */
+    /* display: none; */
+    /* 暫時關閉選單功能 */
+}
+
+.active {
+    right: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 20px 20px;
+}
+
+/* 動態網頁控制 */
+
+/* #menu_control:checked ~ .header nav{
+    right: 0;
+
+} */
+
+@media screen and (min-width:768px){
+    .menu_btn{display: none;}
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        position: relative;
+        left: 0;
+        display: flex;
+        width: auto;
+        height: auto;
+        top: 0;
+        background-color: transparent;
+    }
+}
+/* 動態網頁控制 */
+
+.logo{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.top > .breadcrumb{
+    height: 25px;
+    background-color: #F7F7F7;
+    padding: 0 10px;
+    display: flex;
+}
+
+.top .cutarea{
+    height: 2px;
+    background-color: #D5D5D5;
+}
+
+.top > .breadcrumb a{
+    text-decoration: none;
+    color: #D5D5D5;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.top .breadcrumb > div{
+    color: #D5D5D5;
+    display: block;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+.top > .breadcrumb p{
+    margin: 0 10px 0px 0px;
+}
+
+.wrap{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.page_heading{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.contentflex .viewlist{
+    width: 100%;
+    display: inline;
+}
+
+.contentflex .viewlist > a{
+    width: auto;
+    text-decoration: none;
+    /* padding: 20px 20px; */
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 0.5em 0.6em 0;
+    padding: 0.6em;
+    color: black;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.contentflex > h2{
+    font-size: 1.5em;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+
+.contentflex .itemwrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iteminfo{
+    width: 169px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.iteminfo > img{
+    width: 169px;
+    height: 169px;
+}
+
+.iteminfo > h2{
+    font-size: 1em;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
